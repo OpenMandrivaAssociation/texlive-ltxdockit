@@ -1,3 +1,9 @@
+# revision 21869
+# category Package
+# catalog-ctan /macros/latex/contrib/ltxdockit
+# catalog-date 2010-12-10 17:32:44 +0100
+# catalog-license lppl
+# catalog-version 1.2c
 Name:		texlive-ltxdockit
 Version:	1.2c
 Release:	1
@@ -46,6 +52,7 @@ that be necessary.).
 %{_texmfdistdir}/tex/latex/ltxdockit/ltxdockit.def
 %{_texmfdistdir}/tex/latex/ltxdockit/ltxdockit.sty
 %doc %{_texmfdistdir}/doc/latex/ltxdockit/README
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -56,3 +63,5 @@ that be necessary.).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
