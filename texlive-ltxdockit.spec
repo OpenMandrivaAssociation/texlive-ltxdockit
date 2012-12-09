@@ -54,3 +54,17 @@ that be necessary.).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.2c-2
++ Revision: 753573
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.2c-1
++ Revision: 718910
+- texlive-ltxdockit
+- texlive-ltxdockit
+- texlive-ltxdockit
+- texlive-ltxdockit
+
