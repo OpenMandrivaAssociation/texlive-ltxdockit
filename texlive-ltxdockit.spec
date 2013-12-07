@@ -6,7 +6,7 @@
 # catalog-version 1.2c
 Name:		texlive-ltxdockit
 Version:	1.2c
-Release:	3
+Release:	4
 Summary:	Documentation support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ltxdockit
