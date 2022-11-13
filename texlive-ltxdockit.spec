@@ -1,18 +1,12 @@
-# revision 21869
-# category Package
-# catalog-ctan /macros/latex/contrib/ltxdockit
-# catalog-date 2010-12-10 17:32:44 +0100
-# catalog-license lppl
-# catalog-version 1.2c
 Name:		texlive-ltxdockit
-Version:	1.2d
-Release:	2
+Version:	21869
+Release:	1
 Summary:	Documentation support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ltxdockit
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ltxdockit.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ltxdockit.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ltxdockit.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ltxdockit.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -29,12 +23,12 @@ parties to compile the documentation of other packages, should
 that be necessary.).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -47,24 +41,10 @@ that be necessary.).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.2c-2
-+ Revision: 753573
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.2c-1
-+ Revision: 718910
-- texlive-ltxdockit
-- texlive-ltxdockit
-- texlive-ltxdockit
-- texlive-ltxdockit
-
