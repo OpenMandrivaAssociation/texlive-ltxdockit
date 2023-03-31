@@ -1,6 +1,6 @@
 Name:		texlive-ltxdockit
 Version:	21869
-Release:	1
+Release:	2
 Summary:	Documentation support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ltxdockit
