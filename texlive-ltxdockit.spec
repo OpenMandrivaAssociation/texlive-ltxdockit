@@ -3,7 +3,7 @@ Version:	21869
 Release:	2
 Summary:	Documentation support
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ltxdockit
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/ltxdockit
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ltxdockit.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ltxdockit.doc.r%{version}.tar.xz
